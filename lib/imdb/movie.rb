@@ -80,7 +80,7 @@ module Imdb
     
     # Returns an integer containing the year (CCYY) the movie was released in.
     def year
-      document.search('a[@href^="/Sections/Years/"]').innerHTML.to_i
+      document.search('a[@href^="/year/"]').innerHTML.to_i
     end
     
     # Returns release date for the movie.
